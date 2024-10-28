@@ -1,198 +1,227 @@
 [
-    {
-      "title": "Mobile Suit Gundam",
-      "author": "Yoshiyuki Tomino",
-      "year": 1979,
-      "genre": "Mecha"
-    },
-    {
-      "title": "Neon Genesis Evangelion",
-      "author": "Hideaki Anno",
-      "year": 1995,
-      "genre": "Mecha"
-    },
-    {
-      "title": "The Super Dimension Fortress Macross",
-      "author": "Shoji Kawamori",
-      "year": 1982,
-      "genre": "Mecha"
-    },
-    {
-      "title": "Mobile Suit Zeta Gundam",
-      "author": "Yoshiyuki Tomino",
-      "year": 1985,
-      "genre": "Mecha"
-    },
-    {
-      "title": "Code Geass: Lelouch of the Rebellion",
-      "author": "Gorō Taniguchi",
-      "year": 2006,
-      "genre": "Mecha"
-    },
-    {
-      "title": "Full Metal Panic!",
-      "author": "Shoji Gatoh",
-      "year": 2002,
-      "genre": "Mecha"
-    },
-    {
-      "title": "Gurren Lagann",
-      "author": "Hiroyuki Imaishi",
-      "year": 2007,
-      "genre": "Mecha"
-    },
-    {
-      "title": "Patlabor: The Mobile Police",
-      "author": "Mamoru Oshii",
-      "year": 1989,
-      "genre": "Mecha"
-    },
-    {
-      "title": "Martian Successor Nadesico",
-      "author": "Tatsuo Sato",
-      "year": 1996,
-      "genre": "Mecha"
-    },
-    {
-      "title": "Eureka Seven",
-      "author": "Tomoki Kyoda",
-      "year": 2005,
-      "genre": "Mecha"
-    },
-    {
-      "title": "Gunbuster",
-      "author": "Hideaki Anno",
-      "year": 1988,
-      "genre": "Mecha"
-    },
-    {
-      "title": "Mobile Fighter G Gundam",
-      "author": "Yasuhiro Imagawa",
-      "year": 1994,
-      "genre": "Mecha"
-    },
-    {
-      "title": "Mazinger Z",
-      "author": "Go Nagai",
-      "year": 1972,
-      "genre": "Mecha"
-    },
-    {
-      "title": "The Vision of Escaflowne",
-      "author": "Kazuki Akane",
-      "year": 1996,
-      "genre": "Mecha"
-    },
-    {
-      "title": "Getter Robo",
-      "author": "Go Nagai & Ken Ishikawa",
-      "year": 1974,
-      "genre": "Mecha"
-    },
-    {
-      "title": "Big O",
-      "author": "Kazuyoshi Katayama",
-      "year": 1999,
-      "genre": "Mecha"
-    },
-    {
-      "title": "Armored Trooper Votoms",
-      "author": "Ryosuke Takahashi",
-      "year": 1983,
-      "genre": "Mecha"
-    },
-    {
-      "title": "Aldnoah.Zero",
-      "author": "Ei Aoki",
-      "year": 2014,
-      "genre": "Mecha"
-    },
-    {
-      "title": "Gundam Wing",
-      "author": "Masashi Ikeda",
-      "year": 1995,
-      "genre": "Mecha"
-    },
-    {
-      "title": "Valvrave the Liberator",
-      "author": "Kō Matsuo",
-      "year": 2013,
-      "genre": "Mecha"
-    },
-    {
-      "title": "Knight’s & Magic",
-      "author": "Yusuke Yamamoto",
-      "year": 2017,
-      "genre": "Mecha"
-    },
-    {
-      "title": "Gaogaigar: King of Braves",
-      "author": "Yoshitomo Yonetani",
-      "year": 1997,
-      "genre": "Mecha"
-    },
-    {
-      "title": "RahXephon",
-      "author": "Yutaka Izubuchi",
-      "year": 2002,
-      "genre": "Mecha"
-    },
-    {
-      "title": "Macross Frontier",
-      "author": "Shoji Kawamori",
-      "year": 2008,
-      "genre": "Mecha"
-    },
-    {
-      "title": "Mobile Suit Gundam SEED",
-      "author": "Mitsuo Fukuda",
-      "year": 2002,
-      "genre": "Mecha"
-    },
-    {
-      "title": "Mobile Suit Gundam 00",
-      "author": "Seiji Mizushima",
-      "year": 2007,
-      "genre": "Mecha"
-    },
-    {
-      "title": "Mobile Suit Victory Gundam",
-      "author": "Yoshiyuki Tomino",
-      "year": 1993,
-      "genre": "Mecha"
-    },
-    {
-      "title": "Genesis Climber Mospeada",
-      "author": "Katsuhisa Yamada",
-      "year": 1983,
-      "genre": "Mecha"
-    },
-    {
-      "title": "Dai-Guard",
-      "author": "Seiji Mizushima",
-      "year": 1999,
-      "genre": "Mecha"
-    },
-    {
-      "title": "Zoids: Chaotic Century",
-      "author": "Takao Kato",
-      "year": 1999,
-      "genre": "Mecha"
-    },
-    {
-      "title": "Blue Comet SPT Layzner",
-      "author": "Ryosuke Takahashi",
-      "year": 1985,
-      "genre": "Mecha"
-    },
-    {
-      "title": "Cross Ange: Rondo of Angels and Dragons",
-      "author": "Yoshiharu Ashino",
-      "year": 2014,
-      "genre": "Mecha"
-    },
-    {
-      "title": "Space Runaway Ideon",
-      "author": "Yoshiyuki Tom
-  
-  
+  {
+    "title": "Mobile Suit Gundam",
+    "creator": "Yoshiyuki Tomino",
+    "year": 1979,
+    "genre": "Military science fiction"
+  },
+  {
+    "title": "Neon Genesis Evangelion",
+    "creator": "Hideaki Anno",
+    "year": 1995,
+    "genre": "Apocalyptic and post-apocalyptic fiction"
+  },
+  {
+    "title": "Code Geass: Lelouch of the Rebellion",
+    "creator": "Gorō Taniguchi",
+    "year": 2006,
+    "genre": "Military science fiction"
+  },
+  {
+    "title": "Tengen Toppa Gurren Lagann",
+    "creator": "Hiroyuki Imaishi",
+    "year": 2007,
+    "genre": "Apocalyptic and post-apocalyptic fiction"
+  },
+  {
+    "title": "Macross",
+    "creator": "Shōji Kawamori",
+    "year": 1982,
+    "genre": "Space opera"
+  },
+  {
+    "title": "Full Metal Panic!",
+    "creator": "Shouji Gatou",
+    "year": 2002,
+    "genre": "Military science fiction"
+  },
+  {
+    "title": "Armored Trooper Votoms",
+    "creator": "Ryosuke Takahashi",
+    "year": 1983,
+    "genre": "Military science fiction"
+  },
+  {
+    "title": "Eureka Seven",
+    "creator": "Tomoki Kyoda",
+    "year": 2005,
+    "genre": "Space opera"
+  },
+  {
+    "title": "Martian Successor Nadesico",
+    "creator": "Tatsuo Sato",
+    "year": 1996,
+    "genre": "Space opera"
+  },
+  {
+    "title": "Aldnoah.Zero",
+    "creator": "Gen Urobuchi",
+    "year": 2014,
+    "genre": "Military science fiction"
+  },
+  {
+    "title": "Mazinger Z",
+    "creator": "Go Nagai",
+    "year": 1972,
+    "genre": "Military science fiction"
+  },
+  {
+    "title": "Patlabor: The Mobile Police",
+    "creator": "Mamoru Oshii",
+    "year": 1989,
+    "genre": "Cyberpunk"
+  },
+  {
+    "title": "Blue Gender",
+    "creator": "Ryosuke Takahashi",
+    "year": 1999,
+    "genre": "Apocalyptic and post-apocalyptic fiction"
+  },
+  {
+    "title": "Zegapain",
+    "creator": "Masami Shimoda",
+    "year": 2006,
+    "genre": "Apocalyptic and post-apocalyptic fiction"
+  },
+  {
+    "title": "The Big O",
+    "creator": "Kazuyoshi Katayama",
+    "year": 1999,
+    "genre": "Cyberpunk"
+  },
+  {
+    "title": "Valvrave the Liberator",
+    "creator": "Kō Matsuo",
+    "year": 2013,
+    "genre": "Space opera"
+  },
+  {
+    "title": "Knights of Sidonia",
+    "creator": "Tsutomu Nihei",
+    "year": 2014,
+    "genre": "Space opera"
+  },
+  {
+    "title": "Fafner in the Azure",
+    "creator": "Nobuyoshi Habara",
+    "year": 2004,
+    "genre": "Apocalyptic and post-apocalyptic fiction"
+  },
+  {
+    "title": "Gunbuster",
+    "creator": "Hideaki Anno",
+    "year": 1988,
+    "genre": "Space opera"
+  },
+  {
+    "title": "RahXephon",
+    "creator": "Yutaka Izubuchi",
+    "year": 2002,
+    "genre": "Apocalyptic and post-apocalyptic fiction"
+  },
+  {
+    "title": "Heavy Metal L-Gaim",
+    "creator": "Yoshiyuki Tomino",
+    "year": 1984,
+    "genre": "Space opera"
+  },
+  {
+    "title": "Gundam Wing",
+    "creator": "Masashi Ikeda",
+    "year": 1995,
+    "genre": "Military science fiction"
+  },
+  {
+    "title": "Getter Robo",
+    "creator": "Go Nagai",
+    "year": 1974,
+    "genre": "Military science fiction"
+  },
+  {
+    "title": "Dai-Guard",
+    "creator": "Seiji Mizushima",
+    "year": 1999,
+    "genre": "Military science fiction"
+  },
+  {
+    "title": "Cross Ange: Rondo of Angel and Dragon",
+    "creator": "Yoshiharu Ashino",
+    "year": 2014,
+    "genre": "Space opera"
+  },
+  {
+    "title": "Gaiking",
+    "creator": "Akira Kamiya",
+    "year": 1976,
+    "genre": "Military science fiction"
+  },
+  {
+    "title": "Magic Knight Rayearth",
+    "creator": "Toshihiro Hirano",
+    "year": 1994,
+    "genre": "Space opera"
+  },
+  {
+    "title": "Space Runaway Ideon",
+    "creator": "Yoshiyuki Tomino",
+    "year": 1980,
+    "genre": "Space opera"
+  },
+  {
+    "title": "Genesis Climber MOSPEADA",
+    "creator": "Katsuhisa Yamada",
+    "year": 1983,
+    "genre": "Military science fiction"
+  },
+  {
+    "title": "Voltes V",
+    "creator": "Tadao Nagahama",
+    "year": 1977,
+    "genre": "Military science fiction"
+  },
+  {
+    "title": "Aquarion",
+    "creator": "Shoji Kawamori",
+    "year": 2005,
+    "genre": "Space opera"
+  },
+  {
+    "title": "Break Blade (Broken Blade)",
+    "creator": "Tetsurō Amino",
+    "year": 2010,
+    "genre": "Military science fiction"
+  },
+  {
+    "title": "Gravion",
+    "creator": "Masami Ōbari",
+    "year": 2002,
+    "genre": "Space opera"
+  },
+  {
+    "title": "Star Driver",
+    "creator": "Takuya Igarashi",
+    "year": 2010,
+    "genre": "Space opera"
+  },
+  {
+    "title": "Linebarrels of Iron",
+    "creator": "Masamitsu Hidaka",
+    "year": 2008,
+    "genre": "Space opera"
+  },
+  {
+    "title": "Muv-Luv Alternative: Total Eclipse",
+    "creator": "Takayuki Inagaki",
+    "year": 2012,
+    "genre": "Military science fiction"
+  },
+  {
+    "title": "Planet With",
+    "creator": "Satoshi Mizukami",
+    "year": 2018,
+    "genre": "Space opera"
+  },
+  {
+]
+    
+

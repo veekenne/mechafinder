@@ -3,197 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mecha Anime Finder</title>
+    <title>Mecha Anime Rating</title>
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #1a1a1a;
-            color: #e0e0e0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
             padding: 20px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        h1 {
-            color: #00bcd4;
-            text-align: center;
         }
         .anime-container {
-            background: #333;
+            background-color: #fff;
             padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 15px rgba(0, 188, 212, 0.5);
-        }
-        .anime-title {
-            font-weight: bold;
-            font-size: 1.4em;
-            color: #ff9800;
-        }
-        .rating-options {
-            margin-top: 10px;
-        }
-        button {
-            background-color: #00bcd4;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            font-size: 1em;
+            margin: 15px 0;
             border-radius: 5px;
-            cursor: pointer;
-            display: block;
-            margin: 20px auto;
-            transition: background-color 0.3s;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        button:hover {
-            background-color: #0097a7;
+        h2 {
+            font-size: 1.5em;
         }
-        #genre-preferences, #top-genres, #recommendations {
-            background: #222;
-            padding: 15px;
-            margin-top: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 15px rgba(0, 188, 212, 0.5);
-        }
-        #genre-preferences h2, #top-genres h2, #recommendations h2 {
-            color: #00bcd4;
+        .rating {
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
-    <h1>Mecha Anime Finder</h1>
+    <h1>Rate Your Favorite Mecha Anime</h1>
     <div id="anime-list"></div>
-    <button onclick="submitRatings()">Submit Ratings</button>
-    <div id="genre-preferences"></div>
-    <div id="top-genres"></div>
-    <div id="recommendations"></div>
 
     <script>
-        const animeJson = [
-            { "title": "Mobile Suit Gundam", "author": "Yoshiyuki Tomino", "year": 1979, "genre": "Mecha" },
-            { "title": "Neon Genesis Evangelion", "author": "Hideaki Anno", "year": 1995, "genre": "Mecha" },
-            { "title": "The Super Dimension Fortress Macross", "author": "Shoji Kawamori", "year": 1982, "genre": "Mecha" },
-            { "title": "Mobile Suit Zeta Gundam", "author": "Yoshiyuki Tomino", "year": 1985, "genre": "Mecha" },
-            { "title": "Code Geass: Lelouch of the Rebellion", "author": "Gorō Taniguchi", "year": 2006, "genre": "Mecha" },
-            { "title": "Full Metal Panic!", "author": "Shoji Gatoh", "year": 2002, "genre": "Mecha" },
-            { "title": "Gurren Lagann", "author": "Hiroyuki Imaishi", "year": 2007, "genre": "Mecha" },
-            { "title": "Patlabor: The Mobile Police", "author": "Mamoru Oshii", "year": 1989, "genre": "Mecha" },
-            { "title": "Martian Successor Nadesico", "author": "Tatsuo Sato", "year": 1996, "genre": "Mecha" },
-            { "title": "Eureka Seven", "author": "Tomoki Kyoda", "year": 2005, "genre": "Mecha" },
-            { "title": "Aldnoah.Zero", "author": "Ei Aoki", "year": 2014, "genre": "Mecha" },
-            { "title": "Mobile Suit Gundam SEED", "author": "Mitsuo Fukuda", "year": 2002, "genre": "Mecha" },
-            { "title": "Macross Frontier", "author": "Shoji Kawamori", "year": 2008, "genre": "Mecha" },
-            { "title": "RahXephon", "author": "Yutaka Izubuchi", "year": 2002, "genre": "Mecha" },
-            { "title": "Valvrave the Liberator", "author": "Kō Matsuo", "year": 2013, "genre": "Mecha" },
-            { "title": "Mobile Suit Victory Gundam", "author": "Yoshiyuki Tomino", "year": 1993, "genre": "Mecha" },
-            { "title": "Cross Ange: Rondo of Angels and Dragons", "author": "Yoshiharu Ashino", "year": 2014, "genre": "Mecha" }
+        const animeList = [
+            {"title": "Mobile Suit Gundam", "creator": "Yoshiyuki Tomino", "year": 1979, "genre": "Military science fiction"},
+            {"title": "Neon Genesis Evangelion", "creator": "Hideaki Anno", "year": 1995, "genre": "Apocalyptic and post-apocalyptic fiction"},
+            {"title": "Code Geass: Lelouch of the Rebellion", "creator": "Gorō Taniguchi", "year": 2006, "genre": "Military science fiction"},
+            {"title": "Tengen Toppa Gurren Lagann", "creator": "Hiroyuki Imaishi", "year": 2007, "genre": "Apocalyptic and post-apocalyptic fiction"},
+            {"title": "Macross", "creator": "Shōji Kawamori", "year": 1982, "genre": "Space opera"},
+            {"title": "Full Metal Panic!", "creator": "Shouji Gatou", "year": 2002, "genre": "Military science fiction"},
+            {"title": "Armored Trooper Votoms", "creator": "Ryosuke Takahashi", "year": 1983, "genre": "Military science fiction"},
+            {"title": "Eureka Seven", "creator": "Tomoki Kyoda", "year": 2005, "genre": "Space opera"},
+            {"title": "Martian Successor Nadesico", "creator": "Tatsuo Sato", "year": 1996, "genre": "Space opera"},
+            {"title": "Aldnoah.Zero", "creator": "Gen Urobuchi", "year": 2014, "genre": "Military science fiction"}
+            // Additional entries can be added here
         ];
 
-        function getRandomAnime(animeList, count) {
-            const shuffled = animeList.sort(() => 0.5 - Math.random());
+        function getRandomAnime(animeArray, count) {
+            const shuffled = animeArray.sort(() => 0.5 - Math.random());
             return shuffled.slice(0, count);
         }
 
-        const selectedAnime = getRandomAnime(animeJson, 10);
-        const animeListContainer = document.getElementById('anime-list');
+        function displayAnimeList() {
+            const randomAnimeList = getRandomAnime(animeList, 10);
+            const animeContainer = document.getElementById('anime-list');
 
-        selectedAnime.forEach(anime => {
-            const animeContainer = document.createElement('div');
-            animeContainer.classList.add('anime-container');
+            randomAnimeList.forEach(anime => {
+                const animeDiv = document.createElement('div');
+                animeDiv.classList.add('anime-container');
 
-            const animeTitle = document.createElement('div');
-            animeTitle.classList.add('anime-title');
-            animeTitle.textContent = `${anime.title} (${anime.year}) by ${anime.author}`;
+                animeDiv.innerHTML = `
+                    <h2>${anime.title} (${anime.year})</h2>
+                    <p><strong>Creator:</strong> ${anime.creator}</p>
+                    <p><strong>Genre:</strong> ${anime.genre}</p>
+                    <div class="rating">
+                        <label><input type="radio" name="${anime.title}-rating" value="1"> 1</label>
+                        <label><input type="radio" name="${anime.title}-rating" value="2"> 2</label>
+                        <label><input type="radio" name="${anime.title}-rating" value="3"> 3</label>
+                        <label><input type="radio" name="${anime.title}-rating" value="4"> 4</label>
+                        <label><input type="radio" name="${anime.title}-rating" value="5"> 5</label>
+                        <label><input type="radio" name="${anime.title}-rating" value="haven't seen"> Haven't seen it</label>
+                    </div>
+                `;
 
-            const ratingOptions = document.createElement('div');
-            ratingOptions.classList.add('rating-options');
-
-            for (let i = 1; i <= 5; i++) {
-                const label = document.createElement('label');
-                const radio = document.createElement('input');
-                radio.type = 'radio';
-                radio.name = `rating-${anime.title}`;
-                radio.value = i;
-                label.appendChild(radio);
-                label.appendChild(document.createTextNode(` ${i} `));
-                ratingOptions.appendChild(label);
-            }
-
-            const haventSeenLabel = document.createElement('label');
-            const haventSeenRadio = document.createElement('input');
-            haventSeenRadio.type = 'radio';
-            haventSeenRadio.name = `rating-${anime.title}`;
-            haventSeenRadio.value = 'haven't seen';
-            haventSeenLabel.appendChild(haventSeenRadio);
-            haventSeenLabel.appendChild(document.createTextNode(" Haven't seen it"));
-            ratingOptions.appendChild(haventSeenLabel);
-
-            animeContainer.appendChild(animeTitle);
-            animeContainer.appendChild(ratingOptions);
-            animeListContainer.appendChild(animeContainer);
-        });
-
-        function submitRatings() {
-            const genrePreferences = {};
-            const ratedAnimeTitles = [];
-
-            selectedAnime.forEach(anime => {
-                const ratingElements = document.getElementsByName(`rating-${anime.title}`);
-                let rating = null;
-                ratingElements.forEach(element => {
-                    if (element.checked) {
-                        rating = element.value;
-                    }
-                });
-
-                if (rating && rating !== "haven't seen" && parseInt(rating) >= 3) {
-                    ratedAnimeTitles.push(anime.title);
-                    if (genrePreferences[anime.genre]) {
-                        genrePreferences[anime.genre]++;
-                    } else {
-                        genrePreferences[anime.genre] = 1;
-                    }
-                }
-            });
-
-            const genrePreferencesContainer = document.getElementById('genre-preferences');
-            genrePreferencesContainer.innerHTML = '<h2>Genre Preferences:</h2>';
-            for (const [genre, count] of Object.entries(genrePreferences)) {
-                const genrePreference = document.createElement('div');
-                genrePreference.textContent = `${genre}: ${count}`;
-                genrePreferencesContainer.appendChild(genrePreference);
-            }
-
-            displayTopGenres(genrePreferences, ratedAnimeTitles);
-        }
-
-        function displayTopGenres(genrePreferences, ratedAnimeTitles) {
-            const topGenresContainer = document.getElementById('top-genres');
-            topGenresContainer.innerHTML = '<h2>Top 3 Genres:</h2>';
-
-            const sortedGenres = Object.entries(genrePreferences).sort((a, b) => b[1] - a[1]).slice(0, 3);
-            sortedGenres.forEach(([genre, count]) => {
-                const genreDiv = document.createElement('div');
-                genreDiv.textContent = `${genre}: ${count}`;
-                topGenresContainer.appendChild(genreDiv);
-            });
-
-            recommendAnime(sortedGenres.map(([genre]) => genre), ratedAnimeTitles);
-        }
-
-        function recommendAnime(topGenres, ratedAnimeTitles) {
-            const recommendationsContainer = document.getElementById('recommendations');
-            recommendationsContainer.innerHTML = '<h2>Recommended Shows:</h2>';
-
-            const recommendations = animeJson.filter(anime => 
-                topGenres.includes(anime.genre) && !ratedAnimeTitles.includes(anime.title)
-            ).slice(0, 3);
-
-            recommendations.forEach(anime => {
-                const recommendationDiv = document.createElement('div');
-                recommendationDiv.textContent = `${anime.title} (${anime.year}) by ${anime.author}`;
-                recommendationsContainer.appendChild(recommendationDiv);
+                animeContainer.appendChild(animeDiv);
             });
         }
+
+        displayAnimeList();
     </script>
 </body>
 </html>
